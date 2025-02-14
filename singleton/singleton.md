@@ -1,4 +1,4 @@
-# Le pattern Singleton en TypeScript : Un guide complet
+# Le pattern Singleton en TypeScript : Guide complet
 
 **Introduction :** Le pattern Singleton est l'un des patterns de conception les plus simples mais aussi les plus couramment utilisés. Il permet de s'assurer qu'une classe n'a qu'une seule instance dans toute l'application. Dans cet article, nous allons explorer le fonctionnement du pattern Singleton, discuter de ses cas d'utilisation et vous fournir un exemple d'implémentation en utilisant TypeScript.
 
@@ -58,7 +58,7 @@ Pour mettre en œuvre le pattern Singleton en TypeScript, suivez les étapes sui
 
 Voici un exemple concret d'implémentation du pattern Singleton en TypeScript :
 
-```
+```typescript
 class Singleton {
   private static instance: Singleton;
 
@@ -81,7 +81,7 @@ Dans cet exemple, la classe Singleton a un constructeur privé pour empêcher l'
 
 L'utilisation du pattern Singleton se fait comme suit :
 
-```
+```typescript
 const instance1 = Singleton.getInstance();
 const instance2 = Singleton.getInstance();
 
@@ -94,7 +94,7 @@ Dans cet exemple, `instance1` et `instance2` sont les deux variables qui obtienn
 
 Voici un exemple d'utilisation du pattern Singleton avec une gestion de cache en TypeScript :
 
-```
+```typescript
 class Cache {
   private static instance: Cache;
   private data: Map<string, any>;
@@ -128,7 +128,7 @@ La classe `Cache` contient une propriété privée `data` qui est un objet Map u
 
 Maintenant, voyons comment utiliser le cache :
 
-```
+```typescript
 const cache = Cache.getInstance();
 
 // Ajouter des données au cache

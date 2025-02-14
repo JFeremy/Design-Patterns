@@ -2,9 +2,9 @@
 
 ## List
 
-1. Singleton
-2. Factory Method
-3. Abstract Factory
+1. [Singleton](singleton/singleton.md)
+2. [Factory Method](factory/method.factory.md)
+3. [Abstract Factory](factory/abstract.factory.md)
 4. Builder
 5. Prototype
 6. Adapter
